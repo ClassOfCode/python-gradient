@@ -1,9 +1,9 @@
-FROM public.ecr.aws/lts/ubuntu:20.04
+FROM public.ecr.aws/lts/ubuntu:bionic
 
 RUN apt-get update && \
     apt-get install -y \
-    python-pip \
-    python
+    python \
+    python-pip 
 
 RUN pip install gradient
     
